@@ -1,0 +1,12 @@
+.right-circle{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 30%;
+    right: -34%;
+    filter: blur(25rem);
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+    background-color: var(--color-circleTwo);
+    z-index: 1;
+}

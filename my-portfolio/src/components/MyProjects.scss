@@ -1,0 +1,339 @@
+@use '../styles/mixins';
+@use '../styles/variables';
+
+.my-projects{
+    @include mixins.flex-position(flex, column, center, center);
+    width: 100%;
+    height: auto;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    gap: 10px;
+    cursor: default;
+    position: relative;
+
+    p{
+        @include mixins.font-properties(1.1em, "Montserrat", 300, var(--color-text));
+    }
+
+    h1{
+        @include mixins.font-properties(4.5em, "Montserrat", 300, var(--color-text));
+    }
+
+    .projects-display{
+        @include mixins.flex-position(flex, null, space-between, center);
+        width: 90%;
+        height: 72%;
+        max-width: 1235px;
+        background-color: var(--background-about-me);
+        border-radius: 8px;
+
+
+        .projects{
+            padding: 5px 7px;
+            width: 31%;
+            height: 100%;
+            background-color: var(--color-bg);
+            display: flex;
+            flex-direction: column;
+            border-radius: 7px;
+            overflow: hidden;
+            gap: 10px;
+            position: relative;
+
+                &-img{
+                    width: 100%;
+                    height: 37%;
+                    border-radius: 7px;
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                &-description{
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    align-items: center;
+                    height: 60%;
+                    gap: 7px;
+
+                    .projects-title-description{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 7px;
+
+                        h2{
+                            @include mixins.font-properties(1.6em, 'Montserrat', 400, var(--color-about-me));
+                            text-align: center;
+                        }
+
+                        p{
+                            @include mixins.font-properties(.95em, 'Montserrat');
+                        }
+                    }
+
+                        .technologies{
+                        @include mixins.flex-position(flex, null, start);
+                        gap: 8px;
+                        flex-wrap: wrap;
+
+                        .tech-elem{
+                            width: auto;
+                            height: auto;
+                            background-color: var(--background-tech );
+                            padding: 7px 11px;
+                            border-radius: 7px;
+
+                            p{
+                                @include mixins.font-properties(.85em, null, 500, var(--color-text));
+                                white-space: unset;
+                            }
+                        }
+                    }
+
+                        .github-icon{
+                            display: flex;
+                            justify-content: center;
+                            width: 12%;
+                            height: 10%;
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+
+        }
+    }
+
+
+
+    @include mixins.respond-to(lg){
+
+       
+
+        p{
+            font-size: .98em;
+        }
+
+        h1{
+            font-size: 4.5em;
+        }
+
+        .projects-display{
+
+            flex-wrap: wrap;
+            height: auto;
+            gap: 30px;
+            
+            .projects{
+
+                width: 47%;
+                height: 50%;
+
+                &-img{
+
+                    img{
+
+                    }
+                }
+
+                &-description{
+                  
+                    .projects-title-description{
+                        height: auto;
+
+                            h2{
+                                font-size: 1.4em;
+                            }
+
+                            p{
+                                font-size: .9em;
+                            }
+                    }
+
+                    .technologies{
+ 
+
+                        .tech-elem{
+
+                            p{
+                                font-size: .75em;
+                            }
+                        }
+                    }
+
+                    .github-icon{
+
+                        width: 15%;
+                        height: 15%;
+
+                        img{
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+    @include mixins.respond-to(md){
+
+        p{
+            text-align: center;
+            font-size: .9em;
+        }
+
+        h1{
+            font-size: 3.9em;
+            letter-spacing: 1px;
+        }
+
+        .projects-display{
+
+            justify-content: center;
+
+            .projects{
+
+                width: 90%;
+                height: auto;
+
+                &-img{
+
+                height: 47%;
+
+                    img{
+
+                    }
+                }
+
+                &-description{
+                
+                height: 45%;
+
+                    .projects-title-description{
+
+
+                            h2{
+
+                            }
+
+                            p{
+
+                            }
+                    }
+
+                    .technologies{
+
+                        justify-content: center;
+
+                        .tech-elem{
+
+                            p{
+
+                            }
+                        }
+                    }
+
+                    .github-icon{
+
+                        height: 10vh;
+
+                        img{
+
+                        }
+                    }
+                }
+            }
+
+        }    
+    
+    }
+
+
+    @include mixins.respond-to(sm){
+
+        p{
+            font-size: .8em;
+        }
+
+        h1{
+            font-size: 2.5em;
+        }
+
+        .projects-display{
+
+
+
+            .projects{
+
+
+                &-img{
+
+
+                    img{
+
+                    }
+                }
+
+                &-description{
+
+
+                    .projects-title-description{
+
+
+                            h2{
+                                font-size: 1.2em;
+                            }
+
+                            p{
+                                font-size: .8em;
+                            }
+                    }
+
+                    .technologies{
+
+
+                        .tech-elem{
+
+                            p{
+
+                            }
+                        }
+                    }
+
+                    .github-icon{
+
+                        img{
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

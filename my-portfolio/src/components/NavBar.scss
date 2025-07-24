@@ -1,0 +1,152 @@
+@use '../styles/mixins';
+@use '../styles//variables';
+@use '../styles/placeholders';
+
+
+.nav{
+
+    @include mixins.flex-position(flex, null, space-between, center);
+    position: fixed;
+    width: 100%;
+    height: 6vh;
+    max-height: 32px;
+    top: 0;
+    align-items: center;
+    z-index: 10;
+    background: var(--background-about-me);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    cursor: default;
+    padding: 7px 7px;
+
+
+    .hamburguer-menu{
+        display: none;
+    }
+
+    &-one{
+        width: auto;
+        
+        h2{
+            @extend %nav-basic-font;
+        }
+    }
+
+    &-two{
+        width: 29%;
+        max-width: 419px;
+        min-width: 315px;
+        opacity: 1;
+
+        ul{
+            width: 100%;
+            justify-content: space-evenly;
+            display: flex;
+
+            li{
+                list-style: none;
+
+                a{
+                    text-decoration: none;
+                    transition: .2s ease-in-out;
+                    @extend %nav-basic-font;
+
+                    &:hover{
+                        color: var(--nav-options-hover);
+                    }
+                }
+            }
+        }
+    }
+
+
+    @include mixins.respond-to(md){
+
+        &-one{
+
+            h2{
+                font-size: .85em;
+            }
+        }
+
+
+        &-two{
+            position: relative;
+            min-width: 280px;
+            ul{
+                
+                li{
+                    a{
+                        font-size: .85em;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @include mixins.respond-to(sm){
+
+        height: 10vh;
+
+        &-one{
+            h2{
+                font-size: .85em;
+            }
+        }
+
+        &-two{
+            display: flex;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            opacity: 0;
+            min-width: unset;
+            max-width: unset;
+            width: 100%;
+            pointer-events: none;
+            ul{
+                flex-direction: column;
+
+                li{
+                    background-color: var(--background-index-color-2);
+                    text-align: center;
+                    padding: 7px 7px;
+                    border-top: solid 1px rgba(0, 0, 0, .2);
+                    a{
+                        font-size: .85em;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        
+        .hamburguer-menu{
+            @include mixins.flex-position(flex, null, center, center);
+            position: relative;
+
+            .bi-list{
+                font-size: 1.5em;
+                font-weight: 600;
+                color: var(--color-text);
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    /*.show{
+        
+    } */
+}
+
+
+
+
+
+
+
+
+
+

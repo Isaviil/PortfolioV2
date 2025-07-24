@@ -1,0 +1,46 @@
+
+/*Bebas neue*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*Barlow Condensed*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*variables*/
+
+:root {
+  --color-bg: #111821;
+  --color-text: #eee;
+  --background-index-color-1: rgba(17, 24, 33, 0.507);
+  --background-index-color-2: rgba(17, 24, 33, 0.644);
+  --background-index-color-3: rgba(17, 24, 33, 0.973);
+  --background-index-color-4: #111821;
+  --background-hello: rgb(28, 100, 194);
+  --nav-options-hover: rgb(207, 32, 32);
+  --background-about-me: rgba(32, 32, 32, 0.19);
+  --background-tech: rgb(46, 17, 73);
+  --color-about-me: rgb(182, 29, 113);
+  --color-circleTwo: rgba(38, 156, 253, 0.979);
+}
+

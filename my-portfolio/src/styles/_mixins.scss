@@ -1,0 +1,42 @@
+@use '../styles/variables';
+
+
+@mixin null-check($property, $value){
+    @if ($value != null){
+        #{$property}: $value;
+    }
+}
+
+
+@mixin flex-position($flex: null ,$direction: null, $justify: null, $align: null){
+    @include null-check('display', $flex);
+    @include null-check('flex-direction', $direction);
+    @include null-check('justify-content', $justify);
+    @include null-check('align-items', $align);
+}
+
+
+@mixin font-properties($size: null ,$family: null ,$weight: null, $col: null){
+    @include null-check('font-size', $size);
+    @include null-check('font-family', $family);
+    @include null-check('font-weight', $weight);
+    @include null-check('color', $col);
+}
+
+
+@mixin respond-to($break){
+    @if $break == sm{
+        @media (max-width: 576px){
+            @content;
+        }
+    } @else if $break == md{
+        @media (max-width: 768px){
+            @content;
+        }
+    }
+    @else if $break == lg{
+        @media (max-width: 1024px){
+            @content;
+        }
+    }
+}

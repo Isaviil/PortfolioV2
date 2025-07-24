@@ -1,0 +1,123 @@
+@use '../styles/mixins';
+@use '../styles//variables';
+
+.about-me{
+    @include mixins.flex-position(flex, column, space-evenly, center);
+    width: 100%;
+    height: 85vh;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    cursor: default;
+    position: relative;
+
+    h1{
+        @include mixins.font-properties(4.5em, "Raleway", 200, var(--color-text))
+    }
+
+    .am-position-container{
+    @include mixins.flex-position(flex, null, space-evenly);
+    width: 95%;
+    height: auto;
+    max-width: 1240px;
+
+        .about-me-section{
+            @include mixins.flex-position(flex, column, start);
+            width: 28%;
+            height: auto;
+
+            .title{
+                @include mixins.flex-position(flex, null, center, center);
+                width: 100%;
+                height: auto;
+                padding: 5px 5px;
+
+                h2{
+                    @include mixins.font-properties(2.3em, 'Montserrat', 400, var(--color-about-me));
+                }
+            }
+
+            .description{
+                @include mixins.flex-position(flex, column);
+                gap: 10px;
+                z-index: 1;
+
+                p{
+                    @include mixins.font-properties(1.1em, "Montserrat", 300);
+                    text-align: center;                    
+                }
+            }
+        }
+
+    }
+
+    @include mixins.respond-to(lg){
+        height: auto;
+    }
+
+
+    @include mixins.respond-to(md){
+
+        height: auto;
+
+        h1{
+            font-size: 3.9em;
+            letter-spacing: .7px;
+        }
+
+        .am-position-container{
+            
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            .about-me-section{
+                width: 50%;
+                
+                .title{
+                    h2{
+                        font-size: 2.1em;
+                    }
+                }
+
+                .description{
+                    p{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    @include mixins.respond-to(sm){
+
+        h1{
+            font-size: 2.5em;
+            letter-spacing: normal;
+        }
+
+        .am-position-container{
+
+            .about-me-section{
+                width: 70%;
+                .title{
+
+                    h2{
+                        font-size: 1.8em;
+                    }
+                }
+
+                .description{
+
+                    p{
+                        font-size: .8em;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
