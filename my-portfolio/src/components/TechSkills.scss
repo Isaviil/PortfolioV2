@@ -53,7 +53,7 @@
                         font-family: variables.$font-Montserrat;
                         font-weight: variables.$font-weight-03;
                         padding: 10px 10px;
-                        background-color: variables.$color-bg-skills;
+                        background-color: var(--background-tech);
                         border-radius: 10px;
 
                         &:hover{

@@ -1,6 +1,6 @@
 @use '../styles/mixins';
 
 %nav-basic-font{
-    @include mixins.font-properties(.9em, "Roboto", 300, var(--color-text))
+    @include mixins.font-properties(.95em, "Roboto", 300, var(--color-text))
 }
 

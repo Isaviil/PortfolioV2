@@ -8,16 +8,16 @@
     @include mixins.flex-position(flex, null, space-between, center);
     position: fixed;
     width: 100%;
-    height: 6vh;
-    max-height: 32px;
+    height: auto;
+    max-height: 40px;
     top: 0;
     align-items: center;
     z-index: 10;
-    background: var(--background-about-me);
+    background: var(--nav-background);
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px); /* Safari support */
     cursor: default;
-    padding: 7px 7px;
+    padding: 10px 7px;
 
 
     .hamburguer-menu{
@@ -25,11 +25,21 @@
     }
 
     &-one{
-        width: auto;
-        
-        h2{
+        position: relative;
+        height: 18.4px;
+
+           .bi{
+            position: absolute;
+            top: 0;
             @extend %nav-basic-font;
-        }
+            cursor: pointer;
+           }
+
+           .bi-moon-fill{
+            opacity: 0;
+            pointer-events: none;
+           }
+
     }
 
     &-two{

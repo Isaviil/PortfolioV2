@@ -71,9 +71,7 @@ function handleScroll(ref) {
 
 
 
-    //3. Resize Listener
-
-    //Debounce
+    //3. Resize Listener with debounce 
 
     const debounceRef = useRef();
 
@@ -140,12 +138,64 @@ function handleScroll(ref) {
     }, [])
 
 
+
+
+    //5. Toggle night/light btn
+
+    //Checking the state night/light mode
+
+    const [nightMode, setNightMode] = useState(true);
+    const moonRef = useRef();
+    const sunRef = useRef();
+    let isAnimating = useRef(false);
+    
+
+    const safeToggle = () =>{
+        if (isAnimating.current){
+                return;
+        } else {
+                isAnimating.current = true;
+                setNightMode(!nightMode);
+        }
+    }
+
+    useEffect(()=>{
+
+        document.body.setAttribute("data-theme", nightMode? "dark": "light");
+
+        if (nightMode){
+            let tl = gsap.timeline();
+            tl.fromTo(moonRef.current, {opacity: 1}, {opacity: 0, duration: .3, ease: "power2.out"})
+            .fromTo(sunRef.current, {opacity: 0}, {opacity: 1, duration: .6, ease: "power2.out",
+                onComplete: ()=>{
+                    isAnimating.current = false;
+                }
+            })
+
+        } else {
+            let tl = gsap.timeline();
+            tl.fromTo(sunRef.current, {opacity: 1}, {opacity: 0, duration: .3, ease: "power2.out"})
+            .fromTo(moonRef.current, {opacity: 0}, {opacity: 1, duration: .6, ease: "power2.out",
+                onComplete: ()=>{
+                    isAnimating.current = false;
+                }
+            })
+        }
+
+        
+
+
+    }, [nightMode])
+    
+
+
     
 
     return (
        <nav className="nav" ref={navContainerRef}>
             <div className="nav-one" ref={navOneRef}>
-                <h2>Isaac Vft</h2>
+                    <i className="bi bi-sun-fill" ref={sunRef} onClick={safeToggle}></i>
+                    <i className="bi bi-moon-fill" ref={moonRef} onClick={safeToggle}></i>
             </div>
 
             <div className="hamburguer-menu">

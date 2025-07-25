@@ -4,7 +4,7 @@
 .my-projects{
     @include mixins.flex-position(flex, column, center, center);
     width: 100%;
-    height: auto;
+    height: 72vh;
     background-color: var(--color-bg);
     color: var(--color-text);
     gap: 10px;
@@ -26,7 +26,8 @@
         max-width: 1235px;
         background-color: var(--background-about-me);
         border-radius: 8px;
-
+        padding: 5px 5px;
+        z-index: 1;
 
         .projects{
             padding: 5px 7px;
@@ -116,7 +117,7 @@
 
     @include mixins.respond-to(lg){
 
-       
+       height: auto;
 
         p{
             font-size: .98em;
