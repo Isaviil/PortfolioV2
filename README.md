@@ -1,2 +1,3 @@
 # PortfolioV2
-Updated version with react and sass
+Portfolio de presentación.
+Versión actualizada del Portfolio original.
