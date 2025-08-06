@@ -1,5 +1,5 @@
 # PortfolioV2
-<p>Portfolio de presentación.</p>
+<p>Portafolio de presentación.</p>
 <p>Versión actualizada del Portfolio original.</p>
 <p>La página es responsiva y se adapta al tamaño del dispositivo.</p>
 
