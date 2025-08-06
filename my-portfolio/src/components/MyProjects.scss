@@ -16,7 +16,7 @@
     }
 
     h1{
-        @include mixins.font-properties(4.5em, "Montserrat", 300, var(--color-text));
+        @include mixins.font-properties(5.1em, "Montserrat", 200, var(--color-text));
     }
 
     .projects-display{
@@ -68,12 +68,12 @@
                         gap: 7px;
 
                         h2{
-                            @include mixins.font-properties(1.6em, 'Montserrat', 400, var(--color-about-me));
+                            @include mixins.font-properties(1.9em, 'Montserrat', 400, var(--color-about-me));
                             text-align: center;
                         }
 
                         p{
-                            @include mixins.font-properties(.95em, 'Montserrat');
+                            @include mixins.font-properties(1.1em, 'Montserrat');
                         }
                     }
 

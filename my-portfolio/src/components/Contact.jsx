@@ -41,14 +41,14 @@ const Contact = ({scrollTargets}) =>{
 
                 <div className="msg">
                     <h2>¿Conectar?</h2>
-                    <p>Si tienes alguna pregunta o deseas contantarme, puedes hacerlo mediante los siguientes medios. Siempre reviso mis mensajes</p>
+                    <p>Si tienes alguna pregunta o deseas contactarme, puedes hacerlo mediante los siguientes medios. Siempre reviso mis mensajes</p>
                 </div>
             </div>
 
             <div className="contact-options">
                 <a className="contact-option gmail" href="mailto:isavil.94s@gmail.com">GMAIL</a>
                 <a className="contact-option github" href="https://github.com/isaviil" target="_blank" rel="noopener noreferrer">GITHUB</a>
-                <a className="contact-option resume" href="#" target='_blank'>CV</a>
+                <a className="contact-option resume" href="/PortfolioV2/docs/Isaac_Villafuerte_resume.pdf" target='_blank' rel="noopener noreferrer">CV</a>
             </div>
 
         </div>

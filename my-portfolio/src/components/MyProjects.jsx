@@ -58,6 +58,7 @@ export default function MyProjects({scrollTargets}){
 
     const parentRef = useRef();
     const pRef = useRef();
+    const backgroundRef = useRef();
 
     useEffect(()=>{      
         const targetEachElem = gsap.utils.toArray(".projects");
@@ -70,6 +71,8 @@ export default function MyProjects({scrollTargets}){
             end: 'top 60%'
           }
         });
+            //background
+            tl.fromTo(backgroundRef.current, {opacity: 0}, {opacity: 1, ease: "power2.out", duration: .7})
 
             //description
             tl.fromTo(pRef.current, {opacity: 0, x:-15}, { opacity: 1, x: 0, duration: .3})
@@ -96,7 +99,7 @@ export default function MyProjects({scrollTargets}){
 
             <p ref={pRef}>Algunos trabajos personales y académicos que realicé durante mi formación</p>
             
-            <div className="projects-display">
+            <div className="projects-display" ref={backgroundRef}>
 
                 {projectArray.map((x, i)=>(
 

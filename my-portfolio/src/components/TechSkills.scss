@@ -14,7 +14,7 @@
     .project-title{
 
         h1{
-            @include mixins.font-properties(4.5em, "Montserrat", 300, var(--color-text));
+            @include mixins.font-properties(5.1em, "Montserrat", 200, var(--color-text));
         }
     }
 
@@ -48,7 +48,7 @@
                     gap: 17px;
                     p{
                         transition: .25s ease-in-out;
-                        font-size: 1.2em;
+                        font-size: 1.6em;
                         color: var(--color-about-me);
                         font-family: variables.$font-Montserrat;
                         font-weight: variables.$font-weight-03;

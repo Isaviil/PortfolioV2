@@ -9,7 +9,7 @@
     cursor: default;
 
     h1{
-        @include mixins.font-properties(4.5em, "Raleway", 200, var(--color-text))
+        @include mixins.font-properties(5.1em, "Raleway", 200, var(--color-text))
     }
 
     .message{
@@ -23,12 +23,12 @@
 
             h2{
                 text-align: center;
-                @include mixins.font-properties(2.3em, 'Montserrat', 400, var(--color-about-me));
+                @include mixins.font-properties(2.9em, 'Montserrat', 400, var(--color-about-me));
             }
 
             p{
                 text-align: center;
-                @include mixins.font-properties(1em, 'Montserrat', 300, var(--color-text));
+                @include mixins.font-properties(1.1em, 'Montserrat', 300, var(--color-text));
             }
         }
     }

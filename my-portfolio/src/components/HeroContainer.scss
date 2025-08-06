@@ -25,12 +25,12 @@
         @include mixins.flex-position(null, column, null, start);
 
         h1{
-            @include mixins.font-properties(4em, 'Montserrat', 300);
+            @include mixins.font-properties(4.2em, 'Montserrat', 300);
             letter-spacing: 1.1px;
         }
 
         p{
-            @include mixins.font-properties(.9em, variables.$font-Gill-sans);
+            @include mixins.font-properties(1em, variables.$font-Gill-sans);
             background-color: var(--background-hello);
             padding: 3px 7px;
             border-radius: 7px;
@@ -41,7 +41,7 @@
         justify-content: end;
 
         p{
-            @include mixins.font-properties(1.3em, variables.$font-Gill-sans, 400);
+            @include mixins.font-properties(1.4em, variables.$font-Gill-sans, 400);
         }
     }
 
