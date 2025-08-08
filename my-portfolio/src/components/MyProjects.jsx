@@ -2,6 +2,7 @@ import './MyProjects.scss';
 import imgSignUp from '../assets/images/exampleSignup.png';
 import imgCart from '../assets/images/exampleCart.png';
 import imgPortfolio from '../assets/images/examplePortfolio.png';
+import imgLogIn from '../assets/images/exampleLogin.png';
 import githubIcon from '../assets/images/githubIcon.png';
 import CirclesTwo from './CirclesTwo';
 import gsap  from 'gsap';
@@ -51,6 +52,22 @@ const projectArray = [
         "※Desarrollado para experimentar con diseño dinámico sin frameworks como React o Vue."
       ],
       github: "https://github.com/Isaviil/PortfolioV1"
+    },{
+      img: imgLogIn,
+      tech: [
+        "Next.js", 
+        "React",
+        "NextAuth",
+        "SCSS",
+        "Prisma",
+        "PostgreSQL"],
+      title: "Sistema de Autenticación Next.js",
+      description: [
+        "※Formulario de registro y autentificación simple como práctica de Next.JS.",
+        "※Se usó NextAuth para la validación del ingreso.",
+        "※Incluye protección de rutas y redirección automática según el estado de la sesión."
+      ],
+      github: ""
     }
 ]
 
@@ -72,7 +89,7 @@ export default function MyProjects({scrollTargets}){
           }
         });
             //background
-            tl.fromTo(backgroundRef.current, {opacity: 0}, {opacity: 1, ease: "power2.out", duration: .7})
+            tl.fromTo(backgroundRef.current, {opacity: 0}, {opacity: 1, ease: "power2.out", duration: .3})
 
             //description
             tl.fromTo(pRef.current, {opacity: 0, x:-15}, { opacity: 1, x: 0, duration: .3})

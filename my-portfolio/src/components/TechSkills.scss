@@ -19,9 +19,9 @@
     }
 
     .tech-skills-container{
-    width: 72%; 
+    width: 85%; 
     height: 60%;
-    max-width: 1135px;
+    max-width: 1125px;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -66,6 +66,7 @@
     }
 
     @include mixins.respond-to(lg){
+        min-width: unset;
         height: auto;
     }
 
