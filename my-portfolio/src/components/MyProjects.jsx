@@ -32,7 +32,7 @@ const projectArray = [
         "JS", 
         "HTML/CSS",
         "Microsoft SQL"],
-      title: "Tienda de compras de videojuegos",
+      title: "Tienda de videojuegos",
       description: [
         "※Mini tienda web inspirada en Guilty Gear, con un catálogo funcional.",
         "※Permite seleccionar, añadir productos al carrito y ver detalles.",
