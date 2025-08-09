@@ -14,45 +14,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projectArray = [
     {
-      img: imgSignUp,
-      tech: [
-        "HTML/CSS", 
-        "JS"],
-      title: "Interfaz de registro de usuario",
-      description: [
-        "※Formulario de registro inspirado en el estilo visual de Guilty Gear.",
-        "※Utiliza HTML, CSS y JavaScript puro para validación básica y experiencia interactiva.",
-        "※Diseñado como una interfaz inicial para proyectos con autenticación de usuarios."
-      ],
-      github: "https://github.com/Isaviil/GuiltyGear-sign-up-demo"
-      
-    }, {
-      img: imgCart,
-      tech: ["C#", 
-        "JS", 
-        "HTML/CSS",
-        "Microsoft SQL"],
-      title: "Tienda de videojuegos",
-      description: [
-        "※Mini tienda web inspirada en Guilty Gear, con un catálogo funcional.",
-        "※Permite seleccionar, añadir productos al carrito y ver detalles.",
-        "※Los datos de las compras y el usuario de guardan en el back-end"
-      ],
-      github: "https://github.com/Isaviil/guilty-gear-shop-junior"
-    },{
-      img: imgPortfolio,
-      tech: [
-        "HTML/CSS", 
-        "JS", 
-        "GSAP"],
-      title: "Primer portafolio",
-      description: [
-        "※Primer portafolio web con animaciones personalizadas usando GSAP y JavaScript vanilla.",
-        "※Contiene modales interactivos, transiciones fluidas y efectos tipográficos personalizados.",
-        "※Desarrollado para experimentar con diseño dinámico sin frameworks como React o Vue."
-      ],
-      github: "https://github.com/Isaviil/PortfolioV1"
-    },{
       img: imgLogIn,
       tech: [
         "Next.js", 
@@ -63,11 +24,53 @@ const projectArray = [
         "PostgreSQL"],
       title: "Sistema de Autenticación Next.js",
       description: [
-        "※Formulario de registro y autentificación simple como práctica de Next.JS.",
+        "※Formulario redimensionable de registro y autentificación simple como práctica de Next.JS.",
         "※Se usó NextAuth para la validación del ingreso.",
-        "※Incluye protección de rutas y redirección automática según el estado de la sesión."
+        "※Incluye protección de rutas y redirección automática según el estado de la sesión.",
       ],
-      github: ""
+      github: "https://next-js-login-jxpgi05df-isaacs-projects-8d680544.vercel.app"
+    },
+    {
+      img: imgSignUp,
+      tech: [
+        "HTML/CSS", 
+        "JS"],
+      title: "Interfaz de registro",
+      description: [
+        "※Formulario de registro redimensionable y sin backend.",
+        "※Utiliza HTML, CSS y JavaScript puro para validación básica.",
+        "※Diseñado como una interfaz inicial para proyectos con autenticación de usuarios."
+      ],
+      github: "https://github.com/Isaviil/GuiltyGear-sign-up-demo"
+      
+    }, 
+    {
+      img: imgPortfolio,
+      tech: [
+        "HTML/CSS", 
+        "JS", 
+        "GSAP"],
+      title: "Primer portafolio",
+      description: [
+        "※Primer portafolio web con animaciones personalizadas usando GSAP y vanilla Javascript.",
+        "※Contiene modales interactivos, transiciones y efectos tipográficos personalizados.",
+        "※Desarrollado para experimentar con diseño dinámico sin frameworks como React o Vue."
+      ],
+      github: "https://github.com/Isaviil/PortfolioV1"
+    },
+    {
+      img: imgCart,
+      tech: ["C#", 
+        "JS", 
+        "HTML/CSS",
+        "Microsoft SQL"],
+      title: "Tienda de videojuegos",
+      description: [
+        "※Primer proyecto personal y académico.",
+        "※Permite seleccionar, añadir productos al carrito y ver detalles.",
+        "※Los datos de las compras y el usuario de guardan en el back-end"
+      ],
+      github: "https://github.com/Isaviil/guilty-gear-shop-junior"
     }
 ]
 
@@ -84,8 +87,8 @@ export default function MyProjects({scrollTargets}){
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: parentRef.current,
-            start: 'top 60%',
-            end: 'top 60%'
+            start: 'top 70%',
+            end: 'top 70%',
           }
         });
             //background
