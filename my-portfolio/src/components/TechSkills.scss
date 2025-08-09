@@ -46,6 +46,7 @@
                 .skill-element{
                     display: flex;
                     gap: 17px;
+                    flex-wrap: wrap;
                     p{
                         transition: .25s ease-in-out;
                         font-size: 1.6em;

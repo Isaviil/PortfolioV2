@@ -2,7 +2,7 @@
 
 .contact{
     @include mixins.flex-position(flex, column, space-evenly, center);
-    width: 90%;
+    width: 92%;
     height: 60vh;
     background-color: var(--color-bg);
     position: relative;
@@ -15,15 +15,15 @@
     .message{
         width: 90%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         max-width: 830px; 
 
         .msg{
-            width: 45%;
+            width: 49%;
 
             h2{
                 text-align: center;
-                @include mixins.font-properties(2.9em, 'Montserrat', 400, var(--color-about-me));
+                @include mixins.font-properties(2.6em, 'Montserrat', 400, var(--color-about-me));
             }
 
             p{

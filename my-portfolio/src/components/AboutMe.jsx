@@ -10,13 +10,13 @@ const aboutParagraphs = [
    {
     title: "Pasado",
     desc: [
-        "Mi pasión por la programación inició como un pasatiempo, pero con el pasar de los meses, mi interés creció al ver diseños únicos y soluciones creativas.",
-        "Esta curiosidad inicial me motivó a aprender y crear mis propios proyectos."
+        "Mi pasión por la programación inició como un pasatiempo, pero con el pasar de los meses, mi interés creció al ver diseños únicos e interactivos.",
+        "Esta curiosidad inicial me motivó a aprender más sobre el frontend y crear mis propios proyectos."
     ]
    },{
     title: "Presente",
     desc: [
-        "Actualmente, soy estudiante de Computación e Informática en Cibertec, institución a la que ingresé con el objetivo de profundizar en el desarrollo backend y convertirme en un desarrollador fullstack.",
+        "Actualmente, soy estudiante de Computación e Informática en Cibertec, institución a la que ingresé con el objetivo de aprender sobre el backend y seguir creciendo profesionalmente.",
         "Estoy en búsqueda de prácticas preprofesionales o roles junior en las que pueda aprender en entornos reales y seguir desarrollando mis habilidades."
     ]
    },{

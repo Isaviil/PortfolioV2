@@ -22,7 +22,7 @@ const projectArray = [
         "SCSS",
         "Prisma",
         "PostgreSQL"],
-      title: "Sistema de Autenticación Next.js",
+      title: "Autenticación Next.js",
       description: [
         "※Formulario redimensionable de registro y autentificación simple como práctica de Next.JS.",
         "※Se usó NextAuth para la validación del ingreso.",
