@@ -16,7 +16,7 @@ const aboutParagraphs = [
    },{
     title: "Presente",
     desc: [
-        "Actualmente, soy estudiante de Computación e Informática en Cibertec, institución a la que ingresé con el objetivo de aprender sobre el backend y seguir creciendo profesionalmente.",
+        "Soy estudiante de último año de Computación e Informática en Cibertec, institución a la que ingresé con el objetivo de aprender sobre el backend y seguir creciendo profesionalmente.",
         "Estoy en búsqueda de prácticas preprofesionales o roles junior en las que pueda aprender en entornos reales y seguir desarrollando mis habilidades."
     ]
    },{
