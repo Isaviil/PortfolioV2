@@ -24,7 +24,7 @@ export default function HeroContainer(){
         </div>
 
         <div className="hero-container-text-two">
-            <p ref={pTwoRef}>Desarrollador web en formación</p>
+            <p ref={pTwoRef}>Desarrollador fullstack en formación</p>
         </div>
     </section>
     )
