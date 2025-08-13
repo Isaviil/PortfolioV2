@@ -25,6 +25,7 @@ let arraySkills = [
         skills: [
         "C# - ASP.NET MVC",
         "Java - Eclipse EE",
+        "Node.JS - Básico",
         "Microsoft SQL",
         "MySQL"
         ]

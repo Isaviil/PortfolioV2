@@ -22,7 +22,7 @@ const aboutParagraphs = [
    },{
     title: "Futuro",
     desc: [
-        "Soy consciente de que el camino es largo, pero confío en que mi pasión por la programación y el compromiso con el aprendizaje continuo me permitirán alcanzar mis objetivos como desarrollador."
+        "Soy consciente de que el camino es largo, pero confío en que mi pasión por la programación y el compromiso con el aprendizaje continuo me permitirán alcanzar mis objetivos como futuro desarrollador."
     ]
    }
 ];
