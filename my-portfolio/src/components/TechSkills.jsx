@@ -12,7 +12,7 @@ let arraySkills = [
         "HTML",
         "React",
         "Javascript",
-        "Next.js - Básico"]
+        "Next.js"]
     },{
         category: "Estilos y diseño",
         skills: [
