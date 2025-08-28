@@ -28,7 +28,7 @@ const projectArray = [
         "※Se usó NextAuth para la validación del ingreso.",
         "※Incluye protección de rutas y redirección automática según el estado de la sesión.",
       ],
-      github: "https://next-js-login-jxpgi05df-isaacs-projects-8d680544.vercel.app"
+      github: "https://github.com/Isaviil/NextJSLogin"
     },
     {
       img: imgSignUp,
