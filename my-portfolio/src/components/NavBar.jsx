@@ -29,7 +29,7 @@ function handleScroll(ref) {
 
     //1.Intro animation
     useEffect(()=>{
-        let navTimeline = gsap.timeline({delay: 1});
+        let navTimeline = gsap.timeline({delay: .7});
         navTimeline.fromTo(navContainerRef.current, {width: '0%', opacity: 0}, {width: '100%', opacity: 1,duration: .9, ease: "power1.out"})
         .fromTo(navOneRef.current, {x:-50, opacity: 0}, {x:0, opacity: 1, duration: .4})
             if (window.innerWidth > 576) {
