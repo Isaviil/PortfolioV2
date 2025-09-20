@@ -4,18 +4,20 @@
 .about-me{
     @include mixins.flex-position(flex, column, space-evenly, center);
     width: 100%;
-    height: 85vh;
+    height: 75vh;
+    min-height: 550px;
     background-color: var(--color-bg);
     color: var(--color-text);
     cursor: default;
     position: relative;
 
     h1{
-        @include mixins.font-properties(5.1em, "Raleway", 200, var(--color-text))
+        @include mixins.font-properties(4.3em, "Raleway", 200, var(--color-text));
+        text-align: center;
     }
 
     .am-position-container{
-    @include mixins.flex-position(flex, null, space-evenly);
+    @include mixins.flex-position(flex, null, space-between);
     width: 95%;
     height: auto;
     max-width: 1240px;
@@ -32,7 +34,7 @@
                 padding: 5px 5px;
 
                 h2{
-                    @include mixins.font-properties(3.3em, 'Montserrat', 400, var(--color-about-me));
+                    @include mixins.font-properties(2.8em, 'Montserrat', 400, var(--color-about-me));
                 }
             }
 
@@ -42,7 +44,7 @@
                 z-index: 1;
 
                 p{
-                    @include mixins.font-properties(1.4em, "Montserrat", 300);
+                    @include mixins.font-properties(1.25em, "Montserrat", 300);
                     text-align: center;                    
                 }
             }
@@ -51,16 +53,16 @@
     }
 
     @include mixins.respond-to(lg){
-        height: auto;
+        
     }
 
 
     @include mixins.respond-to(md){
 
-        height: auto;
+        min-height: 800px;
 
         h1{
-            font-size: 3.9em;
+            font-size: 3.6em;
             letter-spacing: .7px;
         }
 
@@ -92,6 +94,8 @@
 
     @include mixins.respond-to(sm){
 
+        height: auto;
+
         h1{
             font-size: 2.5em;
             letter-spacing: normal;
@@ -104,14 +108,14 @@
                 .title{
 
                     h2{
-                        font-size: 1.8em;
+                        font-size: 1.9em;
                     }
                 }
 
                 .description{
 
                     p{
-                        font-size: .8em;
+                        font-size: .95em;
                     }
                 }
             }

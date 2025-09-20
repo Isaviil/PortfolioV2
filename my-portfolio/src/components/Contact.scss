@@ -3,13 +3,14 @@
 .contact{
     @include mixins.flex-position(flex, column, space-evenly, center);
     width: 92%;
-    height: 60vh;
+    height: 50vh;
+    min-height: 500px;
     background-color: var(--color-bg);
     position: relative;
     cursor: default;
 
     h1{
-        @include mixins.font-properties(5.1em, "Raleway", 200, var(--color-text))
+        @include mixins.font-properties(4.3em, "Raleway", 200, var(--color-text))
     }
 
     .message{
@@ -87,7 +88,9 @@
         }
     }
 
+
     @include mixins.respond-to(sm){
+        
         h1{
             font-size: 2.5em;
             letter-spacing: normal;

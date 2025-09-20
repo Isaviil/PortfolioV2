@@ -12,7 +12,8 @@ let arraySkills = [
         "HTML",
         "React",
         "Javascript",
-        "Next.js"]
+        "Typescript",
+        "Next.js",]
     },{
         category: "Estilos y diseño",
         skills: [
@@ -24,10 +25,11 @@ let arraySkills = [
         category: "Back-end y bases de datos",
         skills: [
         "C# - ASP.NET MVC",
-        "Java - Eclipse EE",
+        "Java",
         "Node.JS - Básico",
         "Microsoft SQL",
-        "MySQL"
+        "MySQL",
+        "Supabase - Cloud"
         ]
     }
 ]

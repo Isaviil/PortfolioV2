@@ -1,10 +1,10 @@
 import './MyProjects.scss';
 import imgSignUp from '../assets/images/exampleSignup.png';
 import imgCart from '../assets/images/exampleCart.png';
-import imgPortfolio from '../assets/images/examplePortfolio.png';
 import imgLogIn from '../assets/images/exampleLogin.png';
 import githubIcon from '../assets/images/githubIcon.png';
 import CirclesTwo from './CirclesTwo';
+import imgShop from '../assets/images/exampleShop.png';
 import gsap  from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { useEffect, useRef } from 'react';
@@ -14,6 +14,26 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projectArray = [
     {
+      img: imgShop,
+      tech: [
+        "Next.js",
+        "React",
+        "Typescript",
+        "NextAuth",
+        "SCSS",
+        "Prisma",
+        "Supabase"
+      ],
+      title: "E-Strive shop",
+      description: [
+        "※E-commerce digital de contenido descargable (DLCs).",
+        "※Remake de mi primer proyecto académico, ahora con Typescript y hosteado en Supabase.",
+        "※Incluye un usuario de prueba en el login."
+      ],
+      github: "https://github.com/Isaviil/next-shop",
+      imgClick: "https://next-shop-gr59413t7-isaacs-projects-8d680544.vercel.app/"
+    },
+    {
       img: imgLogIn,
       tech: [
         "Next.js", 
@@ -21,14 +41,15 @@ const projectArray = [
         "NextAuth",
         "SCSS",
         "Prisma",
-        "PostgreSQL"],
+        "Supabase"],
       title: "Autenticación Next.js",
       description: [
-        "※Formulario redimensionable de registro y autentificación simple como práctica de Next.JS.",
+        "※Pequeña práctica con Next.js.",
         "※Se usó NextAuth para la validación del ingreso.",
         "※Incluye protección de rutas y redirección automática según el estado de la sesión.",
       ],
-      github: "https://github.com/Isaviil/NextJSLogin"
+      github: "https://github.com/Isaviil/NextJSLogin",
+      imgClick: "https://next-js-login-n59g0462i-isaacs-projects-8d680544.vercel.app/"
     },
     {
       img: imgSignUp,
@@ -39,38 +60,26 @@ const projectArray = [
       description: [
         "※Formulario de registro redimensionable y sin backend.",
         "※Utiliza HTML, CSS y JavaScript puro para validación básica.",
-        "※Diseñado como una interfaz inicial para proyectos con autenticación de usuarios."
+        "※Diseñado como interfaz inicial para proyectos con autenticación de usuarios."
       ],
-      github: "https://github.com/Isaviil/GuiltyGear-sign-up-demo"
+      github: "https://github.com/Isaviil/GuiltyGear-sign-up-demo",
+      imgClick: "https://isaviil.github.io/GuiltyGear-sign-up-demo/"
       
     }, 
-    {
-      img: imgPortfolio,
-      tech: [
-        "HTML/CSS", 
-        "JS", 
-        "GSAP"],
-      title: "Primer portafolio",
-      description: [
-        "※Primer portafolio web con animaciones personalizadas usando GSAP y vanilla Javascript.",
-        "※Contiene modales interactivos, transiciones y efectos tipográficos personalizados.",
-        "※Desarrollado para experimentar con diseño dinámico sin frameworks como React o Vue."
-      ],
-      github: "https://github.com/Isaviil/PortfolioV1"
-    },
     {
       img: imgCart,
       tech: ["C#", 
         "JS", 
         "HTML/CSS",
         "Microsoft SQL"],
-      title: "Tienda de videojuegos",
+      title: "Tienda virtual",
       description: [
-        "※Primer proyecto personal y académico.",
-        "※Permite seleccionar, añadir productos al carrito y ver detalles.",
-        "※Los datos de las compras y el usuario de guardan en el back-end"
+        "※Primer proyecto personal y académico publicado.",
+        "※E-shop de venta de contenido descargable.",
+        "※Diseño fijo, no redimensionable.",
       ],
-      github: "https://github.com/Isaviil/guilty-gear-shop-junior"
+      github: "https://github.com/Isaviil/guilty-gear-shop-junior",
+      imgClick: null
     }
 ]
 
@@ -117,7 +126,7 @@ export default function MyProjects({scrollTargets}){
                 <h1>Proyectos</h1>
             </div>
 
-            <p ref={pRef}>Algunos trabajos personales y académicos que realicé durante mi formación</p>
+            <p ref={pRef}>Algunos de mis proyectos personales y académicos que publiqué en <strong>Github</strong></p>
             
             <div className="projects-display" ref={backgroundRef}>
 
@@ -126,7 +135,14 @@ export default function MyProjects({scrollTargets}){
                     <div className="projects" key={i}>
 
                         <div className="projects-img">
-                            <img src={x.img} alt={x.title} />
+                          {
+                            x.imgClick?
+                              <a href={x.imgClick} target='_blank'>
+                                <img src={x.img} alt={x.title}></img>
+                              </a>
+                            :
+                            <img src={x.img} alt={x.title}></img>
+                          }
                         </div>
 
                       <div className="projects-description">

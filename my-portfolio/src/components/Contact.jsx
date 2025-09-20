@@ -35,13 +35,13 @@ const Contact = ({scrollTargets}) =>{
  
             <div className="message">
                 <div className="msg">
-                    <h2>Oportunidades</h2>
-                    <p> Me encuentro en busca de oportunidades de trabajo como practicante. Me gustaría poder aplicar y adquirir más conocimientos en un entorno de trabajo real ya sea front-end o back-end.</p>
+                    <h2>En búsqueda</h2>
+                    <p> Estoy en busca de oportunidades de trabajo con el objetivo de aprender y crecer en un entorno de trabajo real.</p>
                 </div>
 
                 <div className="msg">
                     <h2>¿Conectar?</h2>
-                    <p>Si tienes alguna pregunta o deseas contactarme, puedes hacerlo mediante los siguientes medios. Siempre reviso mis mensajes</p>
+                    <p>Siempre reviso mis mensajes en Gmail o en el teléfono. Escríbeme cuando quieras! </p>
                 </div>
             </div>
 

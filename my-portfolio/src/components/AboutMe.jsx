@@ -8,27 +8,26 @@ gsap.registerPlugin(ScrollTrigger);
 
 const aboutParagraphs = [
    {
-    title: "Pasado",
+    title: "Inicios",
     desc: [
-        "Mi pasión por la programación inició como un pasatiempo, pero con el pasar de los meses, mi interés creció al ver diseños únicos e interactivos.",
-        "Esta curiosidad inicial me motivó a aprender más sobre el frontend y crear mis propios proyectos."
+        "Mi pasión comenzó en mi antiguo trabajo, con un simple y curioso click en un video sobre cómo crear un *Hello World* en html.",
+        "Tras un tiempo, decidí llevar mi curiosidad al siguiente nivel y así poco a poco descubrí lo que era el frontend y backend."
     ]
    },{
-    title: "Presente",
+    title: "Actualmente",
     desc: [
-        "Soy estudiante de último año de Computación e Informática en Cibertec, institución a la que ingresé con el objetivo de aprender sobre el backend y seguir creciendo profesionalmente.",
-        "Estoy en búsqueda de prácticas preprofesionales o roles junior en las que pueda aprender en entornos reales y seguir desarrollando mis habilidades."
+        "Soy estudiante en mis últimos ciclos de Computación e Informática.",
+        "Me encuentro en búsqueda de prácticas pre profesionales o trabajos en los cuales pueda aprender, fortalecer y aplicar mis conocimientos en un entorno laboral real."
     ]
    },{
-    title: "Futuro",
+    title: "Extras",
     desc: [
-        "Soy consciente de que el camino es largo, pero confío en que mi pasión por la programación y el compromiso con el aprendizaje continuo me permitirán alcanzar mis objetivos como futuro desarrollador."
+        "Estoy aprendiendo typescript de manera autodidacta.",
+        "Declaro types hasta en proyectos sin TS, cortesía de horas en Typescript.",
+        "La interacción entre el backend, bases de datos y frontend me resulta muy interesante.",
     ]
    }
 ];
-
-
-
 
 
 
@@ -62,7 +61,7 @@ export default function AboutMe({scrollTargets}){
         <section className="about-me" ref={parentRef}>
 
             <Circles />
-            <h1 ref={scrollTargets.aboutRef}>Sobre mí</h1>
+            <h1 ref={scrollTargets.aboutRef}>Un poco sobre mí</h1>
 
             <div className="am-position-container">
                 {aboutParagraphs.map((x,i)=> (

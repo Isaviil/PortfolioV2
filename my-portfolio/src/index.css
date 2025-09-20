@@ -44,6 +44,7 @@
   --background-tech: rgb(46, 17, 73);
   --color-about-me: rgb(182, 29, 113);
   --color-circleTwo: rgba(38, 156, 253, 0.979);
+  --darkish: #11182163;
 }
 
 
@@ -61,4 +62,5 @@ body[data-theme= "light"]{
   --background-about-me: rgba(91, 129, 255, 0.185);
   --background-tech: #6aa0df;
   --color-about-me: rgb(168, 83, 130);
+  --darkish: #fafcff34;
 }

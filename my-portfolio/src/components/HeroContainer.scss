@@ -6,10 +6,19 @@
     @include mixins.flex-position(flex, column, center, center);
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(180deg, transparent, transparent, var(--background-index-color-1), var(--background-index-color-2), var(--background-index-color-3), var(--background-index-color-4)), url("../assets/images/mainBackground.jpg");
-    background-position: center;
-    background-size: cover;
-    background-color: var(--color-bg);
+    min-height: 450px;
+    position: relative;
+
+    &-overlay{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, transparent, transparent, var(--background-index-color-1), var(--background-index-color-2), var(--background-index-color-3), var(--background-index-color-4));
+        background-position: center;
+        background-size: cover;
+        background-color: var(--darkish);
+    }
 
     &-text,
     &-text-two{
@@ -19,6 +28,19 @@
         cursor: default; 
         display: flex;
         min-width: 540px;
+    }
+
+    &-video{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
     }
 
     &-text{
@@ -76,31 +98,32 @@
 
 
     @include mixins.respond-to(sm){
-
+        
 
         &-text, 
         &-text-two{
             min-width: unset;
             width: 100%;
+            text-align: center;
         }
 
         &-text{
 
             h1{
-                font-size: 2em;
+                font-size: 1.7em;
                 letter-spacing: normal;
                 text-align: center;
             }
 
             p{
-                font-size: .75em;
+                font-size: .9em;
             }
         }
 
         &-text-two{
 
             p{
-                font-size: .85em;
+                font-size: .8em;
             }
         }
     }
