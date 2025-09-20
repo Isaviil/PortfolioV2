@@ -10,7 +10,7 @@ export default function HeroContainer(){
     const pTwoRef = useRef();
 
     useEffect(()=>{
-        const heroTimeline = gsap.timeline({delay: 3});
+        const heroTimeline = gsap.timeline({delay: 2.7});
         heroTimeline.fromTo(pRef.current, {x: -50, opacity: 0}, {x: 0, opacity: 1, duration: .3, ease: "power1.out"})
         .fromTo(h1Ref.current, {x: -50, opacity: 0}, {x: 0, opacity: 1, duration: .3, ease: "power1.out"})
         .fromTo(pTwoRef.current, {x: -50, opacity: 0}, {x: 0, opacity: 1, duration: .3, ease: "power1.out"})
