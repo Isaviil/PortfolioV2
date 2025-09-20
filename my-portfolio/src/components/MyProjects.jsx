@@ -126,7 +126,7 @@ export default function MyProjects({scrollTargets}){
                 <h1>Proyectos</h1>
             </div>
 
-            <p ref={pRef}>Algunos de mis proyectos personales y académicos que publiqué en <strong>Github</strong></p>
+            <p ref={pRef}>Algunos proyectos personales y académicos que publiqué en <strong>Github</strong></p>
             
             <div className="projects-display" ref={backgroundRef}>
 
