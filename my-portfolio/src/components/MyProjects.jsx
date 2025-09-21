@@ -31,7 +31,7 @@ const projectArray = [
         "※Incluye un usuario de prueba en el login."
       ],
       github: "https://github.com/Isaviil/next-shop",
-      imgClick: "https://next-shop-gr59413t7-isaacs-projects-8d680544.vercel.app/"
+      imgClick: "https://next-shop-i2ff6l92w-isaacs-projects-8d680544.vercel.app/"
     },
     {
       img: imgLogIn,
