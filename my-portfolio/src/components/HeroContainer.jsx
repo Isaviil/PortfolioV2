@@ -2,6 +2,7 @@ import './HeroContainer.scss'
 import gsap from 'gsap';
 import { useRef, useEffect } from 'react';
 import NightCity from "../assets/videos/Nightcity2077.mp4";
+import { useTranslation } from 'react-i18next';
 
 export default function HeroContainer(){
 
@@ -14,7 +15,10 @@ export default function HeroContainer(){
         heroTimeline.fromTo(pRef.current, {x: -50, opacity: 0}, {x: 0, opacity: 1, duration: .3, ease: "power1.out"})
         .fromTo(h1Ref.current, {x: -50, opacity: 0}, {x: 0, opacity: 1, duration: .3, ease: "power1.out"})
         .fromTo(pTwoRef.current, {x: -50, opacity: 0}, {x: 0, opacity: 1, duration: .3, ease: "power1.out"})
-    })
+    }, [])
+
+    //language hook
+    const { t } = useTranslation(); 
 
     return (
     <section className="hero-container">
@@ -27,12 +31,12 @@ export default function HeroContainer(){
         </div>
         
         <div className="hero-container-text">
-            <p ref={pRef}>Hola! Soy</p>
-            <h1 ref={h1Ref}>Isaac Villafuerte,</h1>
+            <p ref={pRef}>{t(`hero.intro`)}</p>
+            <h1 ref={h1Ref}>{t('hero.name')}</h1>
         </div>
 
         <div className="hero-container-text-two">
-            <p ref={pTwoRef}>Entusiasta de la programación y el té</p>
+            <p ref={pTwoRef}>{t('hero.desc')}</p>
         </div>
     </section>
     )

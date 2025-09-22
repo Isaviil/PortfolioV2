@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/all";
 import './NavBar.scss';
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
@@ -164,38 +165,50 @@ function handleScroll(ref) {
         document.body.setAttribute("data-theme", nightMode? "dark": "light");
 
         if (nightMode){
-            let tl = gsap.timeline();
-            tl.fromTo(moonRef.current, {opacity: 1}, {opacity: 0, duration: .3, ease: "power2.out"})
-            .fromTo(sunRef.current, {opacity: 0}, {opacity: 1, duration: .6, ease: "power2.out",
+            gsap.fromTo(sunRef.current, {opacity: 0}, {opacity: 1, duration: .6, ease: "power2.out",
                 onComplete: ()=>{
                     isAnimating.current = false;
                 }
             })
 
         } else {
-            let tl = gsap.timeline();
-            tl.fromTo(sunRef.current, {opacity: 1}, {opacity: 0, duration: .3, ease: "power2.out"})
-            .fromTo(moonRef.current, {opacity: 0}, {opacity: 1, duration: .6, ease: "power2.out",
+            gsap.fromTo(moonRef.current, {opacity: 0}, {opacity: 1, duration: .6, ease: "power2.out",
                 onComplete: ()=>{
                     isAnimating.current = false;
                 }
             })
         }
 
-        
-
-
     }, [nightMode])
     
 
+    //Translation
+    const {t, i18n} = useTranslation();
 
-    
+    const toggleLanguage = () => {
+        i18n.changeLanguage(i18n.language === 'es' ? 'en' : 'es');
+    };
+        
+    /*
+    <i className="bi bi-sun-fill" ref={sunRef} onClick={safeToggle}></i>
+    <i className="bi bi-moon-fill" ref={moonRef} onClick={safeToggle}></i>
+    */
 
     return (
        <nav className="nav" ref={navContainerRef}>
             <div className="nav-one" ref={navOneRef}>
-                    <i className="bi bi-sun-fill" ref={sunRef} onClick={safeToggle}></i>
-                    <i className="bi bi-moon-fill" ref={moonRef} onClick={safeToggle}></i>
+
+                    <div className="nav-one-bi">
+                        {
+                            nightMode?
+                            <i className="bi bi-sun-fill" ref={sunRef} onClick={safeToggle}></i>
+                            :
+                            <i className="bi bi-moon-fill" ref={moonRef} onClick={safeToggle}></i>
+                        }
+                    </div>
+
+                    <button onClick={toggleLanguage}>{i18n.language === 'es' ? 'ES' : 'EN'}</button>
+  
             </div>
 
             <div className="hamburguer-menu">
@@ -207,25 +220,25 @@ function handleScroll(ref) {
                 <ul>
                     <li>
                         <a href="#" onClick={(e) => { e.preventDefault(); handleScroll(scrollTargets.aboutRef); }}>
-                            Sobre mí
+                           {t('nav.about')}
                         </a>
                     </li>
 
                     <li>
                         <a href="#" onClick={(e)=> { e.preventDefault(); handleScroll(scrollTargets.techRef); }}>
-                            Tecnologías
+                            {t('nav.tech')}
                         </a>
                     </li> 
 
                     <li>
                         <a href="#" onClick={(e)=> {e.preventDefault(); handleScroll(scrollTargets.projectRef)}}>
-                            Projectos
+                            {t('nav.projects')}
                         </a>
                     </li>
 
                     <li>
                         <a href="#" onClick={(e)=> {e.preventDefault(); handleScroll(scrollTargets.contactoRef)}}>
-                            Contacto
+                            {t('nav.contact')}
                         </a>
                     </li>                
                 </ul>

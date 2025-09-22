@@ -3,6 +3,7 @@ import Circles from './Circles';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,30 +26,31 @@ const Contact = ({scrollTargets}) =>{
 
     }, []);
 
+    const {t} = useTranslation();
+
+    const contactArray = t('contact.message', {returnObjects: true})
+
 
     return (
         <div className="contact" ref={contactRef}>
             <Circles/>
             <h1 ref={scrollTargets.contactoRef}>
-                Contacto
+                {t('contact.title')}
             </h1>
  
             <div className="message">
-                <div className="msg">
-                    <h2>En búsqueda</h2>
-                    <p> Estoy en busca de oportunidades de trabajo con el objetivo de aprender y crecer en un entorno de trabajo real.</p>
-                </div>
-
-                <div className="msg">
-                    <h2>¿Conectar?</h2>
-                    <p>Siempre reviso mis mensajes en Gmail o en el teléfono. Escríbeme cuando quieras! </p>
-                </div>
+                {contactArray.map((x, i)=> 
+                    <div className="msg" key={i}>
+                        <h2>{x.subtitle}</h2>
+                        <p>{x.text}</p>
+                    </div>
+                )}
             </div>
 
             <div className="contact-options">
                 <a className="contact-option gmail" href="mailto:isavil.94s@gmail.com">GMAIL</a>
                 <a className="contact-option github" href="https://github.com/isaviil" target="_blank" rel="noopener noreferrer">GITHUB</a>
-                <a className="contact-option resume" href="/PortfolioV2/docs/Isaac_Villafuerte_Resume.pdf" target='_blank' rel="noopener noreferrer">CV</a>
+                <a className="contact-option resume" href={t('resume.file')} target='_blank' rel="noopener noreferrer">CV</a>
             </div>
 
         </div>
@@ -56,3 +58,4 @@ const Contact = ({scrollTargets}) =>{
 }
 
 export default Contact;
+

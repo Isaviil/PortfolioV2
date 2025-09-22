@@ -2,37 +2,10 @@ import './TechSkills.scss';
 import gsap from 'gsap';
 import { useRef, useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/all'
+import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
-let arraySkills = [
-    {
-        category: "Front-end",
-        skills: [
-        "HTML",
-        "React",
-        "Javascript",
-        "Typescript",
-        "Next.js",]
-    },{
-        category: "Estilos y diseño",
-        skills: [
-        "CSS",
-        "Tailwind",
-        "Sass"
-        ]
-    },{
-        category: "Back-end y bases de datos",
-        skills: [
-        "C# - ASP.NET MVC",
-        "Java",
-        "Node.JS - Básico",
-        "Microsoft SQL",
-        "MySQL",
-        "Supabase - Cloud"
-        ]
-    }
-]
 
 export default function TechSkills({scrollTargets}){
 
@@ -54,11 +27,16 @@ export default function TechSkills({scrollTargets}){
 
 }, [])
 
+
+    const {t} = useTranslation();
+
+    const arraySkills = t('technologies.stack', {returnObjects: true});
+
     return ( 
     <div className="tech" ref={scrollTargets.techRef}>
 
         <div className="project-title">
-            <h1>Tecnologías</h1>
+            <h1>{t('technologies.mainTitle')}</h1>
         </div>        
 
         <div className="tech-skills-container">

@@ -7,6 +7,7 @@ import MyProjects from "./components/MyProjects";
 import TechSkills from "./components/TechSkills";
 import Contact from "./components/Contact";
 import { sectionRefs } from "./utils/refs";
+import './i18n/i18n.js';
 
 function App() {
   return (

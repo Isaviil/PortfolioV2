@@ -1,87 +1,13 @@
 import './MyProjects.scss';
-import imgSignUp from '../assets/images/exampleSignup.png';
-import imgCart from '../assets/images/exampleCart.png';
-import imgLogIn from '../assets/images/exampleLogin.png';
 import githubIcon from '../assets/images/githubIcon.png';
 import CirclesTwo from './CirclesTwo';
-import imgShop from '../assets/images/exampleShop.png';
 import gsap  from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-const projectArray = [
-    {
-      img: imgShop,
-      tech: [
-        "Next.js",
-        "React",
-        "Typescript",
-        "NextAuth",
-        "SCSS",
-        "Prisma",
-        "Supabase"
-      ],
-      title: "E-Strive shop",
-      description: [
-        "※E-commerce digital de contenido descargable (DLCs).",
-        "※Remake de mi primer proyecto académico, ahora con Typescript y hosteado en Supabase.",
-        "※Incluye un usuario de prueba en el login."
-      ],
-      github: "https://github.com/Isaviil/next-shop",
-      imgClick: "https://next-shop-i2ff6l92w-isaacs-projects-8d680544.vercel.app/"
-    },
-    {
-      img: imgLogIn,
-      tech: [
-        "Next.js", 
-        "React",
-        "NextAuth",
-        "SCSS",
-        "Prisma",
-        "Supabase"],
-      title: "Autenticación Next.js",
-      description: [
-        "※Pequeña práctica con Next.js.",
-        "※Se usó NextAuth para la validación del ingreso.",
-        "※Incluye protección de rutas y redirección automática según el estado de la sesión.",
-      ],
-      github: "https://github.com/Isaviil/NextJSLogin",
-      imgClick: "https://next-js-login-n59g0462i-isaacs-projects-8d680544.vercel.app/"
-    },
-    {
-      img: imgSignUp,
-      tech: [
-        "HTML/CSS", 
-        "JS"],
-      title: "Interfaz de registro",
-      description: [
-        "※Formulario de registro redimensionable y sin backend.",
-        "※Utiliza HTML, CSS y JavaScript puro para validación básica.",
-        "※Diseñado como interfaz inicial para proyectos con autenticación de usuarios."
-      ],
-      github: "https://github.com/Isaviil/GuiltyGear-sign-up-demo",
-      imgClick: "https://isaviil.github.io/GuiltyGear-sign-up-demo/"
-      
-    }, 
-    {
-      img: imgCart,
-      tech: ["C#", 
-        "JS", 
-        "HTML/CSS",
-        "Microsoft SQL"],
-      title: "Tienda virtual",
-      description: [
-        "※Primer proyecto personal y académico publicado.",
-        "※E-shop de venta de contenido descargable.",
-        "※Diseño fijo, no redimensionable.",
-      ],
-      github: "https://github.com/Isaviil/guilty-gear-shop-junior",
-      imgClick: null
-    }
-]
 
 export default function MyProjects({scrollTargets}){
 
@@ -117,16 +43,19 @@ export default function MyProjects({scrollTargets}){
 
 
 
+    const {t} = useTranslation();
+
+    const projectArray = t('projects.myprojects', {returnObjects: true})       
 
     return(               
         <div className="my-projects" ref={parentRef}>
             <CirclesTwo/>
 
             <div className="project-title" ref={scrollTargets.projectRef}>
-                <h1>Proyectos</h1>
+                <h1>{t('projects.mainTitle')}</h1>
             </div>
 
-            <p ref={pRef}>Algunos proyectos personales y académicos que publiqué en <strong>Github</strong></p>
+            <p ref={pRef}>{t('projects.mainDescription')}</p>
             
             <div className="projects-display" ref={backgroundRef}>
 
