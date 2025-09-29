@@ -42,7 +42,8 @@ const resources = {
                         desc: [
                             "I am learning Typescript on my own",
                             "I add type annotations even in projects without TypeScript, all because of the hours I spent practicing it.",
-                            "I find very interesting the interaction between backend, databases, and frontend."
+                            "I find very interesting the interaction between backend, databases, and frontend.",
+                            "I enjoy working with C#, but I would like to learn another backend technology."
                         ]
                     }
                 ]
@@ -82,6 +83,26 @@ const resources = {
                 mainTitle: "Projects",
                 mainDescription: "Some of my personal and academic work.",
                 myprojects: [
+                    {
+                    img: imgCart,
+                    tech: [
+                        "Next.js",
+                        "React",
+                        "Typescript",
+                        "NextAuth",
+                        "SCSS",
+                        "Prisma",
+                        "Supabase"
+                    ],
+                    title: "Worklink",
+                    description: [
+                        "※Web platform to find, contact and hire professionals.",
+                        "※Includes sign-up, login, and image gallery.",
+                        "※Content can be viewed without logging in",
+                    ],
+                    github: "https://github.com/Isaviil/WorkLink",
+                    imgClick: "https://work-link-s1zz-oqu7n9np4-isaacs-projects-8d680544.vercel.app/"
+                    },
                     {
                     img: imgShop,
                     tech: [
@@ -134,22 +155,7 @@ const resources = {
                     github: "https://github.com/Isaviil/GuiltyGear-sign-up-demo",
                     imgClick: "https://isaviil.github.io/GuiltyGear-sign-up-demo/"
                     
-                    }, 
-                    {
-                    img: imgCart,
-                    tech: ["C#", 
-                        "JS", 
-                        "HTML/CSS",
-                        "Microsoft SQL"],
-                    title: "Online Store",
-                    description: [
-                        "※First personal and academic project published.",
-                        "※E-shop for selling downloadable content.",
-                        "※Not responsive.",
-                    ],
-                    github: "https://github.com/Isaviil/guilty-gear-shop-junior",
-                    imgClick: null
-                    }                    
+                    }                   
                 ]
             },
             contact: {
@@ -205,7 +211,8 @@ const resources = {
                         desc: [
                             "Estoy aprendiendo typescript de manera autodidacta.",
                             "Declaro types hasta en proyectos sin TS, cortesía de horas en Typescript.",
-                            "La interacción entre el backend, bases de datos y frontend me resulta muy interesante."
+                            "La interacción entre el backend, bases de datos y frontend me resulta muy interesante.",
+                            "Disfruto trabajar con C#, pero me gustaría aprender otra tecnología backend."
                         ]
                     }
                 ]
@@ -245,6 +252,26 @@ const resources = {
                 mainTitle: "Proyectos",
                 mainDescription: "Algunos proyectos personales y académicos que publiqué en Github",
                 myprojects: [
+                    {
+                    img: imgCart,
+                    tech: [
+                        "Next.js",
+                        "React",
+                        "Typescript",
+                        "NextAuth",
+                        "SCSS",
+                        "Prisma",
+                        "Supabase"
+                    ],
+                    title: "Worklink",
+                    description: [
+                        "※Plataforma web para encontrar y contratar profesionales.",
+                        "※Incluye registro, login y galería de imágenes.",
+                        "※El contenido puede verse sin iniciar sesión",
+                    ],
+                    github: "https://github.com/Isaviil/WorkLink",
+                    imgClick: "https://work-link-s1zz-oqu7n9np4-isaacs-projects-8d680544.vercel.app/"
+                    },
                     {
                     img: imgShop,
                     tech: [
@@ -297,22 +324,7 @@ const resources = {
                     github: "https://github.com/Isaviil/GuiltyGear-sign-up-demo",
                     imgClick: "https://isaviil.github.io/GuiltyGear-sign-up-demo/"
                     
-                    }, 
-                    {
-                    img: imgCart,
-                    tech: ["C#", 
-                        "JS", 
-                        "HTML/CSS",
-                        "Microsoft SQL"],
-                    title: "Tienda virtual",
-                    description: [
-                        "※Primer proyecto personal y académico publicado.",
-                        "※E-shop de venta de contenido descargable.",
-                        "※Diseño fijo, no redimensionable.",
-                    ],
-                    github: "https://github.com/Isaviil/guilty-gear-shop-junior",
-                    imgClick: null
-                    }                    
+                    }                                       
                 ]
             },
             contact: {
