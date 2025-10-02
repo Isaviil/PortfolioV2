@@ -101,7 +101,7 @@ const resources = {
                         "※Content can be viewed without logging in",
                     ],
                     github: "https://github.com/Isaviil/WorkLink",
-                    imgClick: "https://work-link-s1zz-oqu7n9np4-isaacs-projects-8d680544.vercel.app/"
+                    imgClick: "https://work-link-s1zz-67eio3tea-isaacs-projects-8d680544.vercel.app/"
                     },
                     {
                     img: imgShop,
@@ -270,7 +270,7 @@ const resources = {
                         "※El contenido puede verse sin iniciar sesión",
                     ],
                     github: "https://github.com/Isaviil/WorkLink",
-                    imgClick: "https://work-link-s1zz-oqu7n9np4-isaacs-projects-8d680544.vercel.app/"
+                    imgClick: "https://work-link-s1zz-67eio3tea-isaacs-projects-8d680544.vercel.app/"
                     },
                     {
                     img: imgShop,
