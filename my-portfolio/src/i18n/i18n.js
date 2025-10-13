@@ -96,7 +96,7 @@ const resources = {
                     ],
                     title: "Worklink",
                     description: [
-                        "※Web platform to find, contact and hire professionals.",
+                        "※Demo project for user profile simulation.",
                         "※Includes sign-up, login, and image gallery.",
                         "※Content can be viewed without logging in",
                     ],
@@ -265,7 +265,7 @@ const resources = {
                     ],
                     title: "Worklink",
                     description: [
-                        "※Plataforma web para encontrar y contratar profesionales.",
+                        "※Ejercicio para simular perfiles de usuarios.",
                         "※Incluye registro, login y galería de imágenes.",
                         "※El contenido puede verse sin iniciar sesión",
                     ],
@@ -285,12 +285,12 @@ const resources = {
                     ],
                     title: "E-Strive shop",
                     description: [
-                        "※E-commerce digital de contenido descargable (DLCs).",
+                        "※E-commerce de contenido descargable (DLCs).",
                         "※Remake de mi primer proyecto académico, ahora con Typescript y hosteado en Supabase.",
                         "※Incluye un usuario de prueba en el login."
                     ],
                     github: "https://github.com/Isaviil/next-shop",
-                    imgClick: "https://next-shop-i2ff6l92w-isaacs-projects-8d680544.vercel.app/"
+                    imgClick: "https://next-shop-1gby5mlgt-isaacs-projects-8d680544.vercel.app/"
                     },
                     {
                     img: imgLogIn,
