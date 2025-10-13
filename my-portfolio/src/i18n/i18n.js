@@ -34,7 +34,7 @@ const resources = {
                         title: "Present",
                         desc: [
                             "I'm a student in the final stages of my Computer Science studies.",
-                            "I am looking for internships or entry-level positions where I can learn, strengthen, and apply my knowledge in a real work environment."
+                            "I am looking for internships or entry-level positions where I can learn, strengthen, and grow professionally in a real work environment."
                         ]
                         },
                         {
@@ -42,7 +42,7 @@ const resources = {
                         desc: [
                             "I am learning Typescript on my own",
                             "I add type annotations even in projects without TypeScript, all because of the hours I spent practicing it.",
-                            "I find very interesting the interaction between backend, databases, and frontend.",
+                            "I'm very interested in everything related to backend development.",
                             "I enjoy working with C#, but I would like to learn another backend technology."
                         ]
                     }
@@ -98,7 +98,7 @@ const resources = {
                     description: [
                         "※Demo project for user profile simulation.",
                         "※Includes sign-up, login, and image gallery.",
-                        "※Content can be viewed without logging in",
+                        "※Content can be viewed without logging in.",
                     ],
                     github: "https://github.com/Isaviil/WorkLink",
                     imgClick: "https://work-link-s1zz-67eio3tea-isaacs-projects-8d680544.vercel.app/"
@@ -134,7 +134,7 @@ const resources = {
                         "Supabase"],
                     title: "Next.js Authentication",
                     description: [
-                        "※Small practice project with Next.js",
+                        "※Small practice project with Next.js.",
                         "※Used NextAuth for login validation.",
                         "※Includes route protection and automatic redirection based on session state.",
                     ],
@@ -203,7 +203,7 @@ const resources = {
                         title: "Actualmente",
                         desc: [
                             "Soy estudiante en mis últimos ciclos de Computación e Informática.",
-                            "Me encuentro en búsqueda de prácticas pre profesionales o trabajos en los cuales pueda aprender, fortalecer y aplicar mis conocimientos en un entorno laboral real."
+                            "Me encuentro en búsqueda de prácticas pre profesionales o trabajos en los cuales pueda aprender, fortalecer y crecer profesionalmente en un entorno laboral real."
                         ]
                         },
                         {
@@ -211,7 +211,7 @@ const resources = {
                         desc: [
                             "Estoy aprendiendo typescript de manera autodidacta.",
                             "Declaro types hasta en proyectos sin TS, cortesía de horas en Typescript.",
-                            "La interacción entre el backend, bases de datos y frontend me resulta muy interesante.",
+                            "Tengo un gran interés en todo lo que respecta a backend.",
                             "Disfruto trabajar con C#, pero me gustaría aprender otra tecnología backend."
                         ]
                     }
@@ -267,7 +267,7 @@ const resources = {
                     description: [
                         "※Ejercicio para simular perfiles de usuarios.",
                         "※Incluye registro, login y galería de imágenes.",
-                        "※El contenido puede verse sin iniciar sesión",
+                        "※El contenido puede verse sin iniciar sesión.",
                     ],
                     github: "https://github.com/Isaviil/WorkLink",
                     imgClick: "https://work-link-s1zz-67eio3tea-isaacs-projects-8d680544.vercel.app/"

@@ -31,8 +31,8 @@ export default function AboutMe({scrollTargets}){
     }, []);
 
     const {t} = useTranslation();
+    
     //Retrieving the content from the language file.
-    //*returnObjects - Le dice a i18next que lo seleccionado es un array o un objeto
     const aboutParagraphs = t('aboutMe.sections', { returnObjects: true });
     
 
