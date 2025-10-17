@@ -121,7 +121,7 @@ const resources = {
                         "※Includes a test user for login."
                     ],
                     github: "https://github.com/Isaviil/next-shop",
-                    imgClick: "https://next-shop-i2ff6l92w-isaacs-projects-8d680544.vercel.app/"
+                    imgClick: "https://next-shop-lp5nc37ln-isaacs-projects-8d680544.vercel.app/"
                     },
                     {
                     img: imgLogIn,
@@ -290,7 +290,7 @@ const resources = {
                         "※Incluye un usuario de prueba en el login."
                     ],
                     github: "https://github.com/Isaviil/next-shop",
-                    imgClick: "https://next-shop-1gby5mlgt-isaacs-projects-8d680544.vercel.app/"
+                    imgClick: "https://next-shop-lp5nc37ln-isaacs-projects-8d680544.vercel.app/"
                     },
                     {
                     img: imgLogIn,
