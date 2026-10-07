@@ -49,7 +49,7 @@
         z-index: 1;
 
         p {
-          @include mixins.font-properties(1.25em, "Montserrat", 300);
+          @include mixins.font-properties(1.25em, "Montserrat", 350);
           text-align: center;
         }
       }

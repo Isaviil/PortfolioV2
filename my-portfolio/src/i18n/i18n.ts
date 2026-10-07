@@ -16,7 +16,7 @@ const resources = {
       hero: {
         intro: "Hi! I am",
         name: "Isaac Villafuerte",
-        desc: "Programming enthusiast fueled by tea",
+        desc: "Frontend Developer | Full-Stack Experience",
       },
       aboutMe: {
         mainTitle: "A little bit about me",
@@ -32,7 +32,7 @@ const resources = {
             title: "Present",
             desc: [
               "I completed my Software Development studies at Cibertec and am currently in the process of obtaining my degree.",
-              "I work in ERP systems development, where I apply modular architecture, strict TypeScript, and solve complex business problems.",
+              "I develop ERP systems, which has allowed me to strengthen my TypeScript skills, apply a modular approach, and build custom solutions tailored to client needs.",
             ],
           },
           {
@@ -76,7 +76,8 @@ const resources = {
       },
       projects: {
         mainTitle: "Projects",
-        mainDescription: "Some of my personal and academic work.",
+        mainDescription:
+          "Some of my projects, including my <1>portfolio</1>, published on GitHub",
         myprojects: [
           {
             img: imgMiniThesis,
@@ -91,31 +92,14 @@ const resources = {
               "React Hook Form",
               "Axios",
             ],
-            title: "",
-            description: [],
-            github: "",
-            imgClick: "",
-          },
-          {
-            img: imgCart,
-            tech: [
-              "Next.js",
-              "React",
-              "Typescript",
-              "NextAuth",
-              "SCSS",
-              "Prisma",
-              "Supabase",
-            ],
-            title: "Worklink",
+            title: "Sales Management System",
             description: [
-              "※Demo project for user profile simulation.",
-              "※Includes sign-up, login, and image gallery.",
-              "※Content can be viewed without logging in.",
+              "• Web-based sales management system designed for small businesses.",
+              "• Developed as part of my academic thesis project. Currently in development.",
+              "• Includes authentication, product and customer management, and sales reports.",
             ],
-            github: "https://github.com/Isaviil/WorkLink",
-            imgClick:
-              "https://work-link-s1zz-67eio3tea-isaacs-projects-8d680544.vercel.app/",
+            github: "https://github.com/Isaviil/sistema-gestion-ventas",
+            imgClick: "https://sistema-gestion-ventas-r63a.vercel.app",
           },
           {
             img: imgShop,
@@ -130,13 +114,34 @@ const resources = {
             ],
             title: "E-Strive shop",
             description: [
-              "※Digital e-commerce for downloadable content (DLCs).",
-              "※Remake of my first academic project, now with TypeScript and hosted on Supabase.",
-              "※Includes a test user for login.",
+              "• Digital e-commerce for downloadable content (DLCs).",
+              "• Remake of one of my earliest projects, originally built with HTML, CSS, and JavaScript.",
+              "• Remade using TypeScript as a way to learn and practice the language.",
             ],
             github: "https://github.com/Isaviil/next-shop",
             imgClick:
               "https://next-shop-alyuog2lt-isaacs-projects-8d680544.vercel.app/",
+          },
+          {
+            img: imgCart,
+            tech: [
+              "Next.js",
+              "React",
+              "Typescript",
+              "NextAuth",
+              "SCSS",
+              "Prisma",
+              "Supabase",
+            ],
+            title: "Worklink",
+            description: [
+              "• Demo project for user profile simulation.",
+              "• Includes sign-up, login, and image gallery.",
+              "• Content can be viewed without logging in.",
+            ],
+            github: "https://github.com/Isaviil/WorkLink",
+            imgClick:
+              "https://work-link-s1zz-67eio3tea-isaacs-projects-8d680544.vercel.app/",
           },
         ],
       },
@@ -169,7 +174,7 @@ const resources = {
       hero: {
         intro: "Hola! Soy",
         name: "Isaac Villafuerte",
-        desc: "Entusiasta de la programación y el té",
+        desc: "Desarrollador Frontend | Experiencia Full-Stack",
       },
       aboutMe: {
         mainTitle: "Un poco sobre mí",
@@ -178,14 +183,14 @@ const resources = {
             title: "Inicios",
             desc: [
               "Mi interés por la programación comenzó en mi antiguo trabajo, por curiosidad de aprender a crear páginas web.",
-              "Esa búsqueda inicial me llevó a explorar el desarrollo frontend y backend, y eventualmente a convertir la programación en mi profesión",
+              "Esa búsqueda inicial me llevó a explorar el desarrollo frontend y backend, y eventualmente a convertir la programación en mi profesión.",
             ],
           },
           {
             title: "Actualmente",
             desc: [
               "Culminé mis estudios de Computación e Informática en Cibertec y actualmente me encuentro en proceso de obtener mi título.",
-              "Trabajo en el desarrollo de sistemas ERP, experiencia que me ha permitido reforzar mis conocimientos en TypeScript y lógica de programación, aplicar un enfoque modular y resolver problemas de acuerdo con los requerimientos del cliente.",
+              "Desarrollo sistemas ERP, lo que me ha permitido consolidar el uso de TypeScript, aplicar un enfoque modular y diseñar soluciones a medida según los requerimientos del cliente.",
             ],
           },
           {
@@ -232,7 +237,7 @@ const resources = {
       projects: {
         mainTitle: "Proyectos",
         mainDescription:
-          "Algunos proyectos personales y académicos que publiqué en Github",
+          "Algunos proyectos, además de mi <1>portafolio</1>, que publiqué en Github",
         myprojects: [
           {
             img: imgMiniThesis,
@@ -247,31 +252,14 @@ const resources = {
               "React Hook Form",
               "Axios",
             ],
-            title: "",
-            description: [],
-            github: "",
-            imgClick: "",
-          },
-          {
-            img: imgCart,
-            tech: [
-              "Next.js",
-              "React",
-              "Typescript",
-              "NextAuth",
-              "SCSS",
-              "Prisma",
-              "Supabase",
-            ],
-            title: "Worklink",
+            title: "Sistema de ventas",
             description: [
-              "※Ejercicio para simular perfiles de usuarios.",
-              "※Incluye registro, login y galería de imágenes.",
-              "※El contenido puede verse sin iniciar sesión.",
+              "• Sistema web de gestión de ventas para pequeñas empresas.",
+              "• Desarrollado inicialmente como parte de mi tesis y actualmente en desarrollo.",
+              "• Incluye autenticación, gestión de productos, clientes y reportes de ventas",
             ],
-            github: "https://github.com/Isaviil/WorkLink",
-            imgClick:
-              "https://work-link-s1zz-67eio3tea-isaacs-projects-8d680544.vercel.app/",
+            github: "https://github.com/Isaviil/sistema-gestion-ventas",
+            imgClick: "https://sistema-gestion-ventas-r63a.vercel.app",
           },
           {
             img: imgShop,
@@ -286,13 +274,34 @@ const resources = {
             ],
             title: "E-Strive shop",
             description: [
-              "※E-commerce de contenido descargable (DLCs).",
-              "※Remake de mi primer proyecto académico, ahora con Typescript y hosteado en Supabase.",
-              "※Incluye un usuario de prueba en el login.",
+              "• E-commerce de contenido descargable (DLCs).",
+              "• Remake de uno de mis primeros proyectos, originalmente desarrollado con HTML, CSS y JavaScript.",
+              "• Rehecho con TypeScript como forma de aprendizaje y práctica del lenguaje.",
             ],
             github: "https://github.com/Isaviil/next-shop",
             imgClick:
               "https://next-shop-alyuog2lt-isaacs-projects-8d680544.vercel.app/",
+          },
+          {
+            img: imgCart,
+            tech: [
+              "Next.js",
+              "React",
+              "Typescript",
+              "NextAuth",
+              "SCSS",
+              "Prisma",
+              "Supabase",
+            ],
+            title: "Worklink",
+            description: [
+              "• Ejercicio para simular perfiles de usuarios.",
+              "• Incluye registro, login y galería de imágenes.",
+              "• El contenido puede verse sin iniciar sesión.",
+            ],
+            github: "https://github.com/Isaviil/WorkLink",
+            imgClick:
+              "https://work-link-s1zz-67eio3tea-isaacs-projects-8d680544.vercel.app/",
           },
         ],
       },
@@ -301,7 +310,7 @@ const resources = {
         message: [
           {
             subtitle: "En búsqueda..",
-            text: "Interesado en seguir creciendo profesionalmente y asumir nuevos retos en entornos de trabajo reales.",
+            text: "De seguir creciendo profesionalmente y asumir nuevos retos.",
           },
           {
             subtitle: "Conversemos!",

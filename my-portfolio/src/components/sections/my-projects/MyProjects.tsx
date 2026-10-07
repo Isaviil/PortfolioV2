@@ -4,7 +4,7 @@ import CirclesTwo from "../../ui/circles/CirclesTwo";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { sectionRefs } from "../../../utils/sectionRef";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger);
@@ -81,7 +81,20 @@ export default function MyProjects({ scrollTargets }: MyProjects) {
         <h1>{translate("projects.mainTitle")}</h1>
       </div>
 
-      <p ref={pRef}>{translate("projects.mainDescription")}</p>
+      <p ref={pRef}>
+        <Trans
+          i18nKey="projects.mainDescription"
+          components={{
+            1: (
+              <a
+                href="https://github.com/Isaviil/PortfolioV2"
+                target="_blank"
+                rel="noreferrer"
+              />
+            ),
+          }}
+        />
+      </p>
 
       <div className="projects-display" ref={backgroundRef}>
         {projectArray.map((x, i) => (

@@ -90,7 +90,7 @@
           }
 
           p {
-            @include mixins.font-properties(1.05em, "Montserrat");
+            @include mixins.font-properties(1.05em, "Montserrat", 350);
           }
         }
 
